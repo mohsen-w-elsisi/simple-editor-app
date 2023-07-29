@@ -1,0 +1,35 @@
+{
+  "name": "simple-editing-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev-public": "vite --host",
+    "build": "vite build",
+    "preview": "vite build; cd dist; npx serve",
+    "deploy": "vite build; chmod +x deploy.sh; ./deploy.sh",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "make-icons": "cd public; npx pwa-asset-generator icon.svg app-icons"
+  },
+  "dependencies": {
+    "ramda": "^0.29.0",
+    "svelte-spa-router": "^3.3.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.0.4",
+    "@tsconfig/svelte": "^4.0.1",
+    "@types/node": "^20.3.3",
+    "@types/ramda": "^0.29.2",
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^3.1.7",
+    "postcss": "^8.4.24",
+    "svelte": "^3.58.0",
+    "svelte-check": "^3.3.1",
+    "tailwindcss": "^3.3.2",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-pwa": "^0.16.4"
+  }
+}
